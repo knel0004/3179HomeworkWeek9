@@ -7,9 +7,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+        .centerCSS {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 25%);
+
+        
+        }
+    </style>
+
 </head>
 <body>
-    <div id="Map"></div>
+    <div id="Map" class="centerCSS"></div>
     <script type="text/javascript">
         var spec = "https://raw.githubusercontent.com/Kuuruprasath/Assignment2DatasetVisualisation/refs/heads/main/visualization.vl.json";
         vegaEmbed('#Map', spec).then(function(result) {
